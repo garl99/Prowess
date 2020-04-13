@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.body{
+    font-family: 'Raleway', sans-serif;
+}
+
+header > .navbar{
+    padding: 15px 0;
+}
+
+header  .navbar  .container > a{
+    font-weight: 700;
+    color: #000;
+    font-size: 22px;
+}
+header  .collapse > ul > li{
+    margin-left: 40px;
+}
+
+header .collapse > ul > li > a{
+    color: #777;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+header > .navbar > .container > .collapse > ul > li > a:hover{
+    color: #0087bd;
+}
+
+header > .carousel > .carousel-inner >.principal{
+    position: relative;
+}
+
+header > .carousel > .carousel-inner >.principal > .botones{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    color: black;
+    bottom: 40%;
+    justify-content: center;
+}
+
+header > .carousel > .carousel-inner >.principal > .botones > a{
+    margin: 0px 20px;
+    margin-right: 40px;
+    padding: 10px 50px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+header > .carousel > .carousel-inner >.principal > p{
+    position: absolute;
+    display: inline-block;
+    font-weight: 800;
+    width: 100%;
+    font-style: italic;
+    font-size: 50px;
+    bottom: 50%;
+    text-align: center;
+    color: #fff;
+
+}
+
+
+main .quines-somos{
+    background: #f2f2f2;
+}
+
