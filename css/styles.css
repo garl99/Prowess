@@ -72,20 +72,11 @@ header>.carousel>.carousel-inner>.principal>p {
 
 /*---------MAIN---------*/
 
-main .quienes-somos,
-main .objetivos,
-main .servicios,
-main .proyectos,
-main .contacto
-{
+main .quienes-somos, main .objetivos, main .servicios, main .proyectos, main .contacto {
     padding: 50px 0;
 }
 
-main .quienes-somos .titulo,
-main .objetivos .titulo,
-main .servicios .titulo,
-main .proyectos .titulo,
-main .contacto .titulo {
+main .quienes-somos .titulo, main .objetivos .titulo, main .servicios .titulo, main .proyectos .titulo, main .contacto .titulo {
     font-size: 30px;
     font-weight: 800;
     text-align: center;
@@ -120,23 +111,19 @@ main .quienes-somos .contenedor-m-v {
     padding-top: 40px;
 }
 
-main .quienes-somos .contenedor-m-v .mision,
-main .quienes-somos .contenedor-m-v .vision {
+main .quienes-somos .contenedor-m-v .mision, main .quienes-somos .contenedor-m-v .vision {
     width: 48%;
 }
 
-main .quienes-somos .contenedor-m-v .mision img,
-main .quienes-somos .contenedor-m-v .vision img {
+main .quienes-somos .contenedor-m-v .mision img, main .quienes-somos .contenedor-m-v .vision img {
     width: 100%;
 }
 
-main .quienes-somos .contenedor-m-v .mision:hover img,
-main .quienes-somos .contenedor-m-v .vision:hover img {
+main .quienes-somos .contenedor-m-v .mision:hover img, main .quienes-somos .contenedor-m-v .vision:hover img {
     opacity: 0.8;
 }
 
-main .quienes-somos .contenedor-m-v .mision p, 
-main .quienes-somos .contenedor-m-v .vision p {
+main .quienes-somos .contenedor-m-v .mision p, main .quienes-somos .contenedor-m-v .vision p {
     font-weight: 600;
     padding: 0;
     margin-left: 5px;
@@ -145,8 +132,7 @@ main .quienes-somos .contenedor-m-v .vision p {
     text-align: justify;
 }
 
-main .quienes-somos .contenedor-m-v .mision .subtitulo,
-main .quienes-somos .contenedor-m-v .vision .subtitulo {
+main .quienes-somos .contenedor-m-v .mision .subtitulo, main .quienes-somos .contenedor-m-v .vision .subtitulo {
     padding-top: 20px;
     font-size: 18px;
     color: #333333;
@@ -154,44 +140,108 @@ main .quienes-somos .contenedor-m-v .vision .subtitulo {
     margin-left: 5px;
 }
 
-
 /**************************************/
 
-main .objetivos{
+main .objetivos {
     background: #f2f2f2;
     height: 500px;
 }
 
+main .objetivos .contenedor-objetivos {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
 
-main .objetivos,
-main .servicios,
-main .proyectos,
-main .contacto{
-    height: 500px;
+main .objetivos .contenedor-objetivos div {
+    width: 20%
+}
+
+main .objetivos .contenedor-objetivos div img {
+    width: 100%;
+    height: 150px;
+    transition: .6s;
+}
+
+main .objetivos .contenedor-objetivos div:hover img {
+    width: 100%;
+    height: 150px;
+    transform: scale(1.1);
+}
+
+main .objetivos .contenedor-objetivos div p {
+    padding-top: 30px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/***********************************/
+
+main .servicios .contenedor-servicios {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+main .servicios .contenedor-servicios .card {
+    margin-bottom: 30px;
+    background: #F0FBFF;
+    border-radius: 10px;
+}
+
+main .servicios .contenedor-servicios .card .contenedor-imagen {
+    overflow: hidden;
+}
+
+main .servicios .contenedor-servicios .card img {
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    transition: .6s;
 }
 
 
+main .servicios .contenedor-servicios .card .contenedor-imagen:hover img {
+    transform: scale(1.1);
+}
 
-main .proyectos{
+
+main .servicios .contenedor-servicios .card .card-body h5 {
+    font-weight: 600;
+}
+
+main .servicios .contenedor-servicios .card .card-body p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #777;
+    font-size: 14px;
+}
+
+main .proyectos, main .contacto {
+    height: 500px;
+}
+
+main .proyectos {
     background: #F0FBFF;
     height: 500px;
 }
 
-
-
 /*****************************************/
 
-footer .seccion1{
-    width: 100%;   
+footer .seccion1 {
+    width: 100%;
     padding: 30px 0;
     background: #111;
 }
-footer .seccion2{
+
+footer .seccion2 {
     width: 100%;
     background: #292b2c;
 }
 
-footer .seccion2 .container p{
+footer .seccion2 .container p {
     color: #BBB;
     font-size: 14px;
     margin-bottom: 0;
@@ -200,32 +250,32 @@ footer .seccion2 .container p{
     font-family: 'Open Sans', sans-serif;
 }
 
-footer .seccion2 .container  p a{
+footer .seccion2 .container p a {
     text-decoration: none;
-    color: #BBB; 
-}
-
-footer .seccion2 .container  p a:hover{
-    text-decoration: underline;
-    color: #BBB; 
-}
-
-footer .seccion1 .container  p{
     color: #BBB;
-    text-align: center; 
+}
+
+footer .seccion2 .container p a:hover {
+    text-decoration: underline;
+    color: #BBB;
+}
+
+footer .seccion1 .container p {
+    color: #BBB;
+    text-align: center;
     margin-bottom: 0;
     font-weight: 600;
     font-size: 18px;
 }
 
-footer .contenedor-redes{
+footer .contenedor-redes {
     height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-footer .contenedor-redes .contacto{
+footer .contenedor-redes .contacto {
     color: #fff;
     display: inline-block;
     width: 60px;
@@ -235,22 +285,15 @@ footer .contenedor-redes .contacto{
     margin: 10px 10px;
 }
 
-
-footer .contenedor-redes .instagram a,
-footer .contenedor-redes .facebook a{
+footer .contenedor-redes .instagram a, footer .contenedor-redes .facebook a {
     text-decoration: none;
     color: #fff;
 }
 
-
-footer .contenedor-redes .instagram a:hover{
+footer .contenedor-redes .instagram a:hover {
     color: #3f729b;
 }
-footer .contenedor-redes .facebook a:hover{
+
+footer .contenedor-redes .facebook a:hover {
     color: #3b5998;
 }
-
-
-
-
-
