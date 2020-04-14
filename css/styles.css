@@ -210,6 +210,7 @@ main .servicios .contenedor-servicios .card .contenedor-imagen:hover img {
 
 main .servicios .contenedor-servicios .card .card-body h5 {
     font-weight: 600;
+    font-size: 17px;
 }
 
 main .servicios .contenedor-servicios .card .card-body p {
