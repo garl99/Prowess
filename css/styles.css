@@ -70,13 +70,22 @@ header>.carousel>.carousel-inner>.principal>p {
     color: #fff;
 }
 
-/*---------MAIN > OBJETIVOS---------*/
+/*---------MAIN---------*/
 
-main .quienes-somos {
+main .quienes-somos,
+main .objetivos,
+main .servicios,
+main .proyectos,
+main .contacto
+{
     padding: 50px 0;
 }
 
-main .quienes-somos .titulo {
+main .quienes-somos .titulo,
+main .objetivos .titulo,
+main .servicios .titulo,
+main .proyectos .titulo,
+main .contacto .titulo {
     font-size: 30px;
     font-weight: 800;
     text-align: center;
@@ -89,7 +98,7 @@ main .quienes-somos p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: #777;
-    font-size: 18px;
+    font-size: 16px;
     padding: 0 100px;
     margin-bottom: 20px;
     text-align: justify;
@@ -133,6 +142,7 @@ main .quienes-somos .contenedor-m-v .vision p {
     margin-left: 5px;
     font-size: 13px;
     text-align: left;
+    text-align: justify;
 }
 
 main .quienes-somos .contenedor-m-v .mision .subtitulo,
@@ -144,7 +154,103 @@ main .quienes-somos .contenedor-m-v .vision .subtitulo {
     margin-left: 5px;
 }
 
-main .objetivos {
+
+/**************************************/
+
+main .objetivos{
     background: #f2f2f2;
     height: 500px;
 }
+
+
+main .objetivos,
+main .servicios,
+main .proyectos,
+main .contacto{
+    height: 500px;
+}
+
+
+
+main .proyectos{
+    background: #F0FBFF;
+    height: 500px;
+}
+
+
+
+/*****************************************/
+
+footer .seccion1{
+    width: 100%;   
+    padding: 30px 0;
+    background: #111;
+}
+footer .seccion2{
+    width: 100%;
+    background: #292b2c;
+}
+
+footer .seccion2 .container p{
+    color: #BBB;
+    font-size: 14px;
+    margin-bottom: 0;
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer .seccion2 .container  p a{
+    text-decoration: none;
+    color: #BBB; 
+}
+
+footer .seccion2 .container  p a:hover{
+    text-decoration: underline;
+    color: #BBB; 
+}
+
+footer .seccion1 .container  p{
+    color: #BBB;
+    text-align: center; 
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+footer .contenedor-redes{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .contenedor-redes .contacto{
+    color: #fff;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 34px;
+    margin: 10px 10px;
+}
+
+
+footer .contenedor-redes .instagram a,
+footer .contenedor-redes .facebook a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+footer .contenedor-redes .instagram a:hover{
+    color: #3f729b;
+}
+footer .contenedor-redes .facebook a:hover{
+    color: #3b5998;
+}
+
+
+
+
+
