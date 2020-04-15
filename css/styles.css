@@ -306,18 +306,18 @@ footer .contenedor-redes .gmail a {
     color: #fff;
 }
 
-footer .contenedor-redes .instagram a:hover {
-    color: #3f729b;
-}
-
-footer .contenedor-redes .facebook a:hover {
-    color: #3b5998;
-}
-
 footer .contenedor-redes .whatsapp a:hover {
     color: #25d366;
 }
 
 footer .contenedor-redes .gmail a:hover {
     color: #ea4335;
+}
+
+footer .contenedor-redes .instagram a:hover {
+    color: #3f729b;
+}
+
+footer .contenedor-redes .facebook a:hover {
+    color: #3b5998;
 }
