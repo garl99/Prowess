@@ -125,9 +125,9 @@ main .quienes-somos .contenedor-m-v .mision:hover img, main .quienes-somos .cont
 
 main .quienes-somos .contenedor-m-v .mision p, main .quienes-somos .contenedor-m-v .vision p {
     font-weight: 600;
+    font-size: 12.3px;
     padding: 0;
     margin-left: 5px;
-    font-size: 12.3px;
     text-align: left;
     text-align: justify;
 }
