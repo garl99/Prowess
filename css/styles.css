@@ -190,7 +190,14 @@ main .servicios .contenedor-servicios .card {
     margin-bottom: 30px;
     background: #F0FBFF;
     border-radius: 10px;
+    transition: .3s;
+    overflow: hidden;
 }
+
+main .servicios .contenedor-servicios .card:hover{
+    transform: scale(1.03);
+}
+
 
 main .servicios .contenedor-servicios .card .contenedor-imagen {
     overflow: hidden;
@@ -202,11 +209,16 @@ main .servicios .contenedor-servicios .card img {
     transition: .6s;
 }
 
-
-main .servicios .contenedor-servicios .card .contenedor-imagen:hover img {
+main .servicios .contenedor-servicios .card:hover img {
     transform: scale(1.1);
 }
 
+main .servicios .contenedor-servicios .card:hover {
+    /* box-shadow: 10px 10px 5px #aaaaaa;*/
+    -webkit-box-shadow: 10px 10px 58px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 58px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 58px -9px rgba(0,0,0,0.75);
+}
 
 main .servicios .contenedor-servicios .card .card-body h5 {
     font-weight: 600;
@@ -286,7 +298,10 @@ footer .contenedor-redes .contacto {
     margin: 10px 10px;
 }
 
-footer .contenedor-redes .instagram a, footer .contenedor-redes .facebook a {
+footer .contenedor-redes .instagram a, 
+footer .contenedor-redes .facebook a,
+footer .contenedor-redes .whatsapp a,
+footer .contenedor-redes .gmail a {
     text-decoration: none;
     color: #fff;
 }
@@ -297,4 +312,12 @@ footer .contenedor-redes .instagram a:hover {
 
 footer .contenedor-redes .facebook a:hover {
     color: #3b5998;
+}
+
+footer .contenedor-redes .whatsapp a:hover {
+    color: #25d366;
+}
+
+footer .contenedor-redes .gmail a:hover {
+    color: #ea4335;
 }
