@@ -125,7 +125,7 @@ main .quienes-somos .contenedor-m-v .mision:hover img, main .quienes-somos .cont
 
 main .quienes-somos .contenedor-m-v .mision p, main .quienes-somos .contenedor-m-v .vision p {
     font-weight: 600;
-    font-size: 12.3px;
+    font-size: 12px;
     padding: 0;
     margin-left: 5px;
     text-align: left;
@@ -182,7 +182,7 @@ main .objetivos .contenedor-objetivos div p {
 
 main .servicios .contenedor-servicios {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 20px;
@@ -240,7 +240,30 @@ main .proyectos, main .contacto {
 
 main .proyectos {
     background: #F0FBFF;
-    height: 500px;
+    padding: 50px 100px;
+}
+
+main .proyectos .cliente{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    border-bottom: 3px solid #777;
+}
+
+main .proyectos .cliente .tamano{
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+
+main .proyectos .cliente a{
+    float: right;
+    font-size: 20px;
+    color: #000;
+}
+
+main .proyectos .cliente:hover{
+    border-bottom: 3px solid #0087bd;
 }
 
 /*****************************************/
@@ -249,6 +272,22 @@ footer .seccion1 {
     width: 100%;
     padding: 30px 0;
     background: #111;
+    position: relative;
+}
+
+footer > .seccion1 >  a{
+    position: absolute;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    right: 50px;
+    font-size: 30px;
+    background: #292b2c;
+    border-radius: 50px 50px 0 0;
+    color: #fff;
+}
+
+footer > .seccion1 >  a:hover{
+    color: #0087bd;
 }
 
 footer .seccion2 {
