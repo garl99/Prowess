@@ -4,7 +4,16 @@ $(document).ready(function () {
     var key = 1;
     var skt = 1;
 
-    
+    $('#down, #up2, #up3, #up4').css({
+        'display': 'none'
+    });
+
+    $('#up, #down2,#down3, #down4').css({
+        'display': 'block'
+    });
+
+
+
     var swiper = new Swiper('.num1', {
         effect: 'coverflow',
         grabCursor: true,
@@ -74,11 +83,6 @@ $(document).ready(function () {
     });
 
 
-
-    /*$('#div-dra').css({
-        'display': 'none'
-    });*/
-
     $('#div-dog').css({
         'display': 'none'
     });
@@ -98,10 +102,28 @@ $(document).ready(function () {
             $('#div-dra').css({
                 'display': 'none'
             });
+
+            $('#down').css({
+                'display': 'block'
+            });
+
+            $('#up').css({
+                'display': 'none'
+            });
+
             dra = 1;
         }
         else {
             $('#div-dra').css({
+                'display': 'block'
+            });
+
+
+            $('#down').css({
+                'display': 'none'
+            });
+
+            $('#up').css({
                 'display': 'block'
             });
             dra = 0;
@@ -117,10 +139,26 @@ $(document).ready(function () {
             $('#div-dog').css({
                 'display': 'none'
             });
+
+            $('#down2').css({
+                'display': 'block'
+            });
+
+            $('#up2').css({
+                'display': 'none'
+            });
             dog = 1;
         }
         else {
             $('#div-dog').css({
+                'display': 'block'
+            });
+
+            $('#down2').css({
+                'display': 'none'
+            });
+
+            $('#up2').css({
                 'display': 'block'
             });
             dog = 0;
@@ -135,10 +173,26 @@ $(document).ready(function () {
             $('#div-key').css({
                 'display': 'none'
             });
+
+            $('#down3').css({
+                'display': 'block'
+            });
+
+            $('#up3').css({
+                'display': 'none'
+            });
             key = 1;
         }
         else {
             $('#div-key').css({
+                'display': 'block'
+            });
+
+            $('#down3').css({
+                'display': 'none'
+            });
+
+            $('#up3').css({
                 'display': 'block'
             });
             key = 0;
@@ -152,10 +206,27 @@ $(document).ready(function () {
             $('#div-skt').css({
                 'display': 'none'
             });
+
+            $('#down4').css({
+                'display': 'block'
+            });
+
+            $('#up4').css({
+                'display': 'none'
+            });
             skt = 1;
         }
         else {
             $('#div-skt').css({
+                'display': 'block'
+            });
+
+
+            $('#down4').css({
+                'display': 'none'
+            });
+
+            $('#up4').css({
                 'display': 'block'
             });
             skt = 0;
