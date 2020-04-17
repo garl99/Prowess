@@ -261,6 +261,10 @@ main .proyectos .cliente a{
     color: #000;
 }
 
+main .proyectos .cliente a:hover{
+    color: #0087bd;
+}
+
 main .proyectos .cliente:hover{
     border-bottom: 3px solid #0087bd;
 }
