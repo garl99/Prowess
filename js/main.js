@@ -29,6 +29,10 @@ $(document).ready(function () {
         pagination: {
             el: '.p-num1',
         },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
     });
 
     var swiper2 = new Swiper('.num2', {
@@ -45,6 +49,10 @@ $(document).ready(function () {
         },
         pagination: {
             el: '.p-num2',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
     });
 
@@ -63,6 +71,10 @@ $(document).ready(function () {
         pagination: {
             el: '.p-num3',
         },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
     });
 
     var swiper4 = new Swiper('.num4', {
@@ -79,6 +91,10 @@ $(document).ready(function () {
         },
         pagination: {
             el: '.p-num4',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
     });
 
