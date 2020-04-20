@@ -378,7 +378,6 @@ footer .contenedor-redes .facebook a:hover {
     main .quienes-somos .titulo, main .objetivos .titulo, main .servicios .titulo, main .proyectos .titulo, main .contacto .titulo {
         font-size: 24px;
     }
-
     main .quienes-somos .contenedor-m-v {
         margin-top: 50px;
         padding: 0 70px;
@@ -433,7 +432,6 @@ footer .contenedor-redes .facebook a:hover {
         header>.carousel>.carousel-inner>.principal>.botones {
             display: none;
         }
-
         main .quienes-somos p {
             padding: 0 40px;
             font-size: 16px;
@@ -480,6 +478,9 @@ footer .contenedor-redes .facebook a:hover {
         }
         main .proyectos .container .num4 .swiper-wrapper .swiper-slide {
             margin-bottom: 20px;
+        }
+        main .proyectos .cliente{
+            font-size: 14px;
         }
         footer>.seccion1>a {
             right: 0;
