@@ -3,7 +3,7 @@ $(document).ready(function () {
     var dog = 1;
     var key = 1;
     var skt = 1;
-
+    ready = true;
     $('#down, #up2, #up3, #up4').css({
         'display': 'none'
     });
@@ -11,6 +11,7 @@ $(document).ready(function () {
     $('#up, #down2,#down3, #down4').css({
         'display': 'block'
     });
+    $('main .proyectos .uno').css('border-bottom','3px solid #0087bd');
 
 
 
@@ -119,6 +120,8 @@ $(document).ready(function () {
                 'display': 'none'
             });
 
+            $('main .proyectos .uno').css('border-bottom','3px solid #777');
+
             $('#down').css({
                 'display': 'block'
             });
@@ -133,6 +136,8 @@ $(document).ready(function () {
             $('#div-dra').css({
                 'display': 'block'
             });
+
+            $('main .proyectos .uno').css('border-bottom','3px solid #0087bd');
 
 
             $('#down').css({
@@ -156,6 +161,8 @@ $(document).ready(function () {
                 'display': 'none'
             });
 
+            $('main .proyectos .dos').css('border-bottom','3px solid #777');
+
             $('#down2').css({
                 'display': 'block'
             });
@@ -169,6 +176,8 @@ $(document).ready(function () {
             $('#div-dog').css({
                 'display': 'block'
             });
+
+            $('main .proyectos .dos').css('border-bottom','3px solid #0087bd');
 
             $('#down2').css({
                 'display': 'none'
@@ -190,6 +199,8 @@ $(document).ready(function () {
                 'display': 'none'
             });
 
+            $('main .proyectos .tres').css('border-bottom','3px solid #777');
+
             $('#down3').css({
                 'display': 'block'
             });
@@ -203,6 +214,8 @@ $(document).ready(function () {
             $('#div-key').css({
                 'display': 'block'
             });
+
+            $('main .proyectos .tres').css('border-bottom','3px solid #0087bd');
 
             $('#down3').css({
                 'display': 'none'
@@ -223,6 +236,8 @@ $(document).ready(function () {
                 'display': 'none'
             });
 
+            $('main .proyectos .cuatro').css('border-bottom','3px solid #777');
+
             $('#down4').css({
                 'display': 'block'
             });
@@ -237,6 +252,7 @@ $(document).ready(function () {
                 'display': 'block'
             });
 
+            $('main .proyectos .cuatro').css('border-bottom','3px solid #0087bd');
 
             $('#down4').css({
                 'display': 'none'

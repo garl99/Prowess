@@ -132,8 +132,6 @@ main .quienes-somos .contenedor-m-v .mision p, main .quienes-somos .contenedor-m
     text-align: justify;
 }
 
-
-
 main .quienes-somos .contenedor-m-v .mision .subtitulo, main .quienes-somos .contenedor-m-v .vision .subtitulo {
     padding-top: 20px;
     font-size: 18px;
@@ -146,13 +144,13 @@ main .quienes-somos .contenedor-m-v .mision .subtitulo, main .quienes-somos .con
 
 main .objetivos {
     background: #f2f2f2;
-    height: 500px;
 }
 
 main .objetivos .contenedor-objetivos {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+    flex-wrap: wrap;
 }
 
 main .objetivos .contenedor-objetivos div {
@@ -196,10 +194,9 @@ main .servicios .contenedor-servicios .card {
     overflow: hidden;
 }
 
-main .servicios .contenedor-servicios .card:hover{
+main .servicios .contenedor-servicios .card:hover {
     transform: scale(1.03);
 }
-
 
 main .servicios .contenedor-servicios .card .contenedor-imagen {
     overflow: hidden;
@@ -217,9 +214,9 @@ main .servicios .contenedor-servicios .card:hover img {
 
 main .servicios .contenedor-servicios .card:hover {
     /* box-shadow: 10px 10px 5px #aaaaaa;*/
-    -webkit-box-shadow: 10px 10px 58px -9px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 58px -9px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 58px -9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 58px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 58px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 58px -9px rgba(0, 0, 0, 0.75);
 }
 
 main .servicios .contenedor-servicios .card .card-body h5 {
@@ -234,14 +231,13 @@ main .servicios .contenedor-servicios .card .card-body p {
     font-size: 14px;
 }
 
-
 main .proyectos {
     background: #F0FBFF;
     padding: 50px 100px;
     padding-bottom: 100px;
 }
 
-main .proyectos .cliente{
+main .proyectos .cliente {
     font-size: 16px;
     font-weight: 600;
     padding: 10px;
@@ -249,23 +245,22 @@ main .proyectos .cliente{
     border-bottom: 3px solid #777;
 }
 
-main .proyectos .cliente .tamano{
+main .proyectos .cliente .tamano {
     font-size: 24px;
     margin-right: 5px;
 }
 
-
-main .proyectos .cliente a{
+main .proyectos .cliente a {
     float: right;
     font-size: 20px;
     color: #000;
 }
 
-main .proyectos .cliente a:hover{
+main .proyectos .cliente a:hover {
     color: #0087bd;
 }
 
-main .proyectos .cliente:hover{
+main .proyectos .cliente:hover {
     border-bottom: 3px solid #0087bd;
 }
 
@@ -278,7 +273,7 @@ footer .seccion1 {
     position: relative;
 }
 
-footer > .seccion1 >  a{
+footer>.seccion1>a {
     position: absolute;
     padding: 10px 10px 0px 10px;
     bottom: 0;
@@ -289,7 +284,13 @@ footer > .seccion1 >  a{
     color: #fff;
 }
 
-footer > .seccion1 >  a:hover{
+footer .seccion1 .container hr {
+    background: #BBB;
+    width: 50%;
+    margin: 2px auto;
+}
+
+footer>.seccion1>a:hover {
     color: #0087bd;
 }
 
@@ -342,10 +343,7 @@ footer .contenedor-redes .contacto {
     margin: 10px 10px;
 }
 
-footer .contenedor-redes .instagram a, 
-footer .contenedor-redes .facebook a,
-footer .contenedor-redes .whatsapp a,
-footer .contenedor-redes .gmail a {
+footer .contenedor-redes .instagram a, footer .contenedor-redes .facebook a, footer .contenedor-redes .whatsapp a, footer .contenedor-redes .gmail a {
     text-decoration: none;
     color: #fff;
 }
@@ -364,4 +362,130 @@ footer .contenedor-redes .instagram a:hover {
 
 footer .contenedor-redes .facebook a:hover {
     color: #3b5998;
+}
+
+/********RESPONSIVE DESIGN************/
+
+@media screen and (max-width:800px) {
+    header>.carousel>.carousel-inner>.principal>p {
+        font-size: 35px;
+        color: #fff;
+    }
+    main .quienes-somos p {
+        padding: 0 50px;
+        font-size: 18px;
+    }
+    main .quienes-somos .titulo, main .objetivos .titulo, main .servicios .titulo, main .proyectos .titulo, main .contacto .titulo {
+        font-size: 24px;
+    }
+
+    main .quienes-somos .contenedor-m-v {
+        margin-top: 50px;
+        padding: 0 70px;
+    }
+    main .quienes-somos .contenedor-m-v .mision, main .quienes-somos .contenedor-m-v .vision {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    main .quienes-somos .contenedor-m-v .mision p, main .quienes-somos .contenedor-m-v .vision p {
+        font-size: 15px;
+    }
+    main .objetivos .contenedor-objetivos div {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+    main .objetivos .contenedor-objetivos div img {
+        width: 70%;
+        position: relative;
+        margin-left: 15%;
+    }
+    main .objetivos .contenedor-objetivos div:hover img {
+        width: 70%;
+    }
+    main .objetivos .contenedor-objetivos div p {
+        font-size: 16px;
+    }
+    .swiper-slide {
+        width: 200px;
+        height: 200px;
+    }
+    @media screen and (max-width:450px) {
+        header .navbar .container>a>h1 {
+            display: inline;
+            font-weight: 700;
+            color: #000;
+            font-size: 18px;
+        }
+        header .navbar .container .navbar-toggler {
+            margin-right: 5px;
+        }
+        header>.navbar>.container>.navbar-brand img {
+            width: 50px;
+            margin-left: 10px;
+        }
+        header>.carousel>.carousel-inner>.principal>p {
+            font-size: 20px;
+            color: #fff;
+            padding: 0 40px;
+            bottom: 30%;
+        }
+        header>.carousel>.carousel-inner>.principal>.botones {
+            display: none;
+        }
+
+        main .quienes-somos p {
+            padding: 0 40px;
+            font-size: 16px;
+            hyphens: manual;
+        }
+        main .quienes-somos .contenedor-m-v {
+            margin-top: 40px;
+            padding: 0 60px;
+        }
+        main .quienes-somos .contenedor-m-v .mision, main .quienes-somos .contenedor-m-v .vision {
+            width: 100%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        main .quienes-somos .contenedor-m-v .mision p, main .quienes-somos .contenedor-m-v .vision p {
+            font-size: 13px;
+            hyphens: manual;
+        }
+        main .objetivos .contenedor-objetivos div {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        main .objetivos .contenedor-objetivos div img {
+            width: 60%;
+            position: relative;
+            margin-left: 20%;
+        }
+        main .objetivos .contenedor-objetivos div:hover img {
+            width: 60%;
+        }
+        main .objetivos .contenedor-objetivos div p {
+            font-size: 16px;
+            padding: 0 30px;
+            margin-top: 10px;
+        }
+        main .proyectos {
+            background: #F0FBFF;
+            padding: 50px 30px;
+            padding-bottom: 100px;
+        }
+        main .proyectos .container .swiper-container .swiper-wrapper .swiper-slide {
+            width: 200px;
+            height: 200px;
+        }
+        main .proyectos .container .num4 .swiper-wrapper .swiper-slide {
+            margin-bottom: 20px;
+        }
+        footer>.seccion1>a {
+            right: 0;
+        }
+        footer .seccion1 .container hr {
+            width: 80%;
+        }
+    }
 }
