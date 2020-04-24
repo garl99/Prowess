@@ -190,7 +190,7 @@ main .servicios .contenedor-servicios {
 
 main .servicios .contenedor-servicios .card {
     margin-bottom: 30px;
-    background: #F0FBFF;
+    background: #fdeff3;
     border-radius: 10px;
     transition: .3s;
     overflow: hidden;
@@ -234,7 +234,7 @@ main .servicios .contenedor-servicios .card .card-body p {
 }
 
 main .proyectos {
-    background: #F0FBFF;
+    background: #fdeff3;
     padding: 50px 100px;
     padding-bottom: 100px;
 }
@@ -416,95 +416,96 @@ footer .contenedor-redes .facebook a:hover {
         width: 200px;
         height: 200px;
     }
-    @media screen and (max-width:450px) {
-        header .navbar .container>a>h1 {
-            display: inline;
-            font-weight: 700;
-            color: #000;
-            font-size: 18px;
-        }
-        header .navbar .container .navbar-toggler {
-            margin-right: 5px;
-        }
-        header .navbar .container>a>h1 {
-            position: absolute;
-            padding: 0;
-            margin-top: 4%;
-        }
-        header>.navbar>.container>.navbar-brand img {
-            width: 50px;
-            margin-left: 10px;
-        }
-        header>.carousel>.carousel-inner>.principal>p {
-            font-size: 20px;
-            color: #fff;
-            padding: 0 40px;
-            bottom: 30%;
-        }
-        header>.carousel>.carousel-inner>.principal>.botones {
-            display: none;
-        }
-        main .quienes-somos p {
-            padding: 0 40px;
-            font-size: 16px;
-            hyphens: manual;
-        }
-        main .quienes-somos .contenedor-m-v {
-            margin-top: 40px;
-            padding: 0 60px;
-        }
-        main .quienes-somos .contenedor-m-v .mision, main .quienes-somos .contenedor-m-v .vision {
-            width: 100%;
-            margin: auto;
-            margin-bottom: 20px;
-        }
-        main .quienes-somos .contenedor-m-v .mision p, main .quienes-somos .contenedor-m-v .vision p {
-            font-size: 13px;
-            hyphens: manual;
-        }
-        main .objetivos .contenedor-objetivos div {
-            width: 100%;
-            margin-bottom: 30px;
-        }
-        main .objetivos .contenedor-objetivos div img {
-            width: 60%;
-            position: relative;
-            margin-left: 20%;
-        }
-        main .objetivos .contenedor-objetivos div:hover img {
-            width: 60%;
-        }
-        main .objetivos .contenedor-objetivos div p {
-            font-size: 16px;
-            padding: 0 30px;
-            margin-top: 10px;
-        }
-        main .proyectos {
-            background: #F0FBFF;
-            padding: 50px 30px;
-            padding-bottom: 100px;
-        }
-        main .proyectos .container .swiper-container .swiper-wrapper .swiper-slide {
-            width: 200px;
-            height: 200px;
-        }
-        main .proyectos .container .num4 .swiper-wrapper .swiper-slide {
-            margin-bottom: 20px;
-        }
-        main .proyectos .cliente{
-            font-size: 14px;
-        }
-        footer>.seccion1>a {
-            right: 0;
-        }
-        footer .seccion1 .container hr {
-            width: 80%;
-        }
+}
 
-        footer .seccion1 .container img {
-            position: relative;
-             top:0px;
-             left: 40%;
-        }
+@media screen and (max-width:450px) {
+    header .navbar .container>a>h1 {
+        display: inline;
+        font-weight: 700;
+        color: #000;
+        font-size: 18px;
+    }
+    header .navbar .container .navbar-toggler {
+        margin-right: 5px;
+    }
+    header .navbar .container>a>h1 {
+        position: absolute;
+        padding: 0;
+        margin-top: 4%;
+    }
+    header>.navbar>.container>.navbar-brand img {
+        width: 50px;
+        margin-left: 10px;
+    }
+    header>.carousel>.carousel-inner>.principal>p {
+        font-size: 20px;
+        color: #fff;
+        padding: 0 40px;
+        bottom: 30%;
+    }
+    header>.carousel>.carousel-inner>.principal>.botones {
+        display: none;
+    }
+    main .quienes-somos p {
+        padding: 0 40px;
+        font-size: 16px;
+        hyphens: manual;
+    }
+    main .quienes-somos .contenedor-m-v {
+        margin-top: 40px;
+        padding: 0 60px;
+    }
+    main .quienes-somos .contenedor-m-v .mision, main .quienes-somos .contenedor-m-v .vision {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    main .quienes-somos .contenedor-m-v .mision p, main .quienes-somos .contenedor-m-v .vision p {
+        font-size: 13px;
+        hyphens: manual;
+    }
+    main .objetivos .contenedor-objetivos div {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    main .objetivos .contenedor-objetivos div img {
+        width: 60%;
+        position: relative;
+        margin-left: 20%;
+    }
+    main .objetivos .contenedor-objetivos div:hover img {
+        width: 60%;
+    }
+    main .objetivos .contenedor-objetivos div p {
+        font-size: 16px;
+        padding: 0 30px;
+        margin-top: 10px;
+    }
+    main .proyectos {
+        background: #F0FBFF;
+        padding: 50px 30px;
+        padding-bottom: 100px;
+    }
+    main .proyectos .container .swiper-container .swiper-wrapper .swiper-slide {
+        width: 200px;
+        height: 200px;
+    }
+    main .proyectos .container .num4 .swiper-wrapper .swiper-slide {
+        margin-bottom: 20px;
+    }
+    main .proyectos .cliente{
+        font-size: 14px;
+    }
+    footer>.seccion1>a {
+        right: 0;
+    }
+    footer .seccion1 .container hr {
+        width: 80%;
+    }
+
+    footer .seccion1 .container img {
+        position: relative;
+         top:0px;
+         left: 40%;
     }
 }
