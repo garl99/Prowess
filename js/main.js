@@ -11,7 +11,7 @@ $(document).ready(function () {
     $('#up, #down2,#down3, #down4').css({
         'display': 'block'
     });
-    $('main .proyectos .uno').css('border-bottom','3px solid #0087bd');
+    $('main .proyectos .uno').css('border-bottom','3px solid #942a4d');
 
 
 
@@ -137,7 +137,7 @@ $(document).ready(function () {
                 'display': 'block'
             });
 
-            $('main .proyectos .uno').css('border-bottom','3px solid #0087bd');
+            $('main .proyectos .uno').css('border-bottom','3px solid #942a4d');
 
 
             $('#down').css({
@@ -177,7 +177,7 @@ $(document).ready(function () {
                 'display': 'block'
             });
 
-            $('main .proyectos .dos').css('border-bottom','3px solid #0087bd');
+            $('main .proyectos .dos').css('border-bottom','3px solid #942a4d');
 
             $('#down2').css({
                 'display': 'none'
@@ -215,7 +215,7 @@ $(document).ready(function () {
                 'display': 'block'
             });
 
-            $('main .proyectos .tres').css('border-bottom','3px solid #0087bd');
+            $('main .proyectos .tres').css('border-bottom','3px solid #942a4d');
 
             $('#down3').css({
                 'display': 'none'
@@ -252,7 +252,7 @@ $(document).ready(function () {
                 'display': 'block'
             });
 
-            $('main .proyectos .cuatro').css('border-bottom','3px solid #0087bd');
+            $('main .proyectos .cuatro').css('border-bottom','3px solid #942a4d');
 
             $('#down4').css({
                 'display': 'none'
@@ -264,5 +264,31 @@ $(document).ready(function () {
             skt = 0;
         }
     });
+
+     //Scroll elementos menu
+
+
+     var servicio = $('#s-servicios').offset().top;
+     var contacto= $('#s-contacto').offset().top;
+ 
+ 
+     $('#btn-servicios').on('click',function(e){
+         e.preventDefault();
+ 
+         $('html, body').animate({
+             scrollTop: servicio -100
+         },580);
+ 
+     });
+     
+         
+ 
+     $('#btn-contacto').on('click',function(e){
+         e.preventDefault();
+ 
+         $('html, body').animate({
+             scrollTop: contacto -100
+         },580);
+     });
 
 });

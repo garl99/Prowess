@@ -13,15 +13,17 @@
 /*----------HEADER-----------*/
 
 header>.navbar {
-    padding: 15px 0;
-    border-bottom: 2px solid #0087bd;
+    padding: 10px 0;
+    border-bottom: 2px solid #882649;
 }
+/*511436 #942a4d #cb3c61 #882649*/
 
 header .navbar .container>a>h1 {
-    display: inline;
+    display: inline-block;
     font-weight: 700;
     color: #000;
     font-size: 22px;
+    padding-top: 15px;
 }
 
 header .collapse>ul>li {
@@ -31,11 +33,11 @@ header .collapse>ul>li {
 header .collapse>ul>li>a {
     color: #777;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 header>.navbar>.container>.collapse>ul>li>a:hover {
-    color: #0087bd;
+    color: #942a4d;
 }
 
 header>.carousel>.carousel-inner>.principal {
@@ -257,18 +259,18 @@ main .proyectos .cliente a {
 }
 
 main .proyectos .cliente a:hover {
-    color: #0087bd;
+    color: #942a4d;
 }
 
 main .proyectos .cliente:hover {
-    border-bottom: 3px solid #0087bd;
+    border-bottom: 3px solid #942a4d;
 }
 
 /*****************************************/
 
 footer .seccion1 {
     width: 100%;
-    padding: 30px 0;
+    padding: 15px 0;
     background: #111;
     position: relative;
 }
@@ -290,8 +292,13 @@ footer .seccion1 .container hr {
     margin: 2px auto;
 }
 
+
+footer .seccion1 .container img {
+    position: relative; top:30px; left: 10%;
+}
+
 footer>.seccion1>a:hover {
-    color: #0087bd;
+    color: #942a4d;
 }
 
 footer .seccion2 {
@@ -419,6 +426,11 @@ footer .contenedor-redes .facebook a:hover {
         header .navbar .container .navbar-toggler {
             margin-right: 5px;
         }
+        header .navbar .container>a>h1 {
+            position: absolute;
+            padding: 0;
+            margin-top: 4%;
+        }
         header>.navbar>.container>.navbar-brand img {
             width: 50px;
             margin-left: 10px;
@@ -487,6 +499,12 @@ footer .contenedor-redes .facebook a:hover {
         }
         footer .seccion1 .container hr {
             width: 80%;
+        }
+
+        footer .seccion1 .container img {
+            position: relative;
+             top:0px;
+             left: 40%;
         }
     }
 }
