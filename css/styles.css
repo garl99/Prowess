@@ -16,6 +16,7 @@ header>.navbar {
     padding: 10px 0;
     border-bottom: 2px solid #882649;
 }
+
 /*511436 #942a4d #cb3c61 #882649*/
 
 header .navbar .container>a>h1 {
@@ -292,9 +293,10 @@ footer .seccion1 .container hr {
     margin: 2px auto;
 }
 
-
 footer .seccion1 .container img {
-    position: relative; top:30px; left: 10%;
+    position: relative;
+    top: 30px;
+    left: 10%;
 }
 
 footer>.seccion1>a:hover {
@@ -371,12 +373,23 @@ footer .contenedor-redes .facebook a:hover {
     color: #3b5998;
 }
 
+footer .seccion1 .container img {
+    position: relative;
+    top: 0px;
+    left: 46%;
+}
+
 /********RESPONSIVE DESIGN************/
 
 @media screen and (max-width:800px) {
     header>.carousel>.carousel-inner>.principal>p {
         font-size: 35px;
         color: #fff;
+    }
+    header .navbar .container>a>h1 {
+        position: absolute;
+        padding: 0;
+        margin-top: 2%;
     }
     main .quienes-somos p {
         padding: 0 50px;
@@ -416,9 +429,14 @@ footer .contenedor-redes .facebook a:hover {
         width: 200px;
         height: 200px;
     }
+    footer .seccion1 .container img {
+        position: relative;
+        top: 0px;
+        left: 45%;
+    }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:550px) {
     header .navbar .container>a>h1 {
         display: inline;
         font-weight: 700;
@@ -482,7 +500,6 @@ footer .contenedor-redes .facebook a:hover {
         margin-top: 10px;
     }
     main .proyectos {
-        background: #F0FBFF;
         padding: 50px 30px;
         padding-bottom: 100px;
     }
@@ -493,7 +510,7 @@ footer .contenedor-redes .facebook a:hover {
     main .proyectos .container .num4 .swiper-wrapper .swiper-slide {
         margin-bottom: 20px;
     }
-    main .proyectos .cliente{
+    main .proyectos .cliente {
         font-size: 14px;
     }
     footer>.seccion1>a {
@@ -502,10 +519,21 @@ footer .contenedor-redes .facebook a:hover {
     footer .seccion1 .container hr {
         width: 80%;
     }
-
     footer .seccion1 .container img {
         position: relative;
-         top:0px;
-         left: 40%;
+        top: 0px;
+        left: 40%;
+    }
+}
+
+@media screen and (max-width:350px) {
+    header .navbar .container>a>h1 {
+        font-size: 16px;
+        position: absolute;
+        top: 20px;
+    }
+
+    header>.carousel>.carousel-inner>.principal>p {
+        font-size: 16px;
     }
 }
