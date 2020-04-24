@@ -143,6 +143,14 @@ main .quienes-somos .contenedor-m-v .mision .subtitulo, main .quienes-somos .con
     margin-left: 5px;
 }
 
+main >.quienes-somos >.container >.video {
+    width: 60%;
+    height: 50%;
+    margin-left: 20%;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
 /**************************************/
 
 main .objetivos {
@@ -482,6 +490,13 @@ footer .seccion1 .container img {
         font-size: 13px;
         hyphens: manual;
     }
+
+    main >.quienes-somos >.container >.video {
+        width: 80%;
+        height: 50%;
+        margin-left: 12%;
+    }
+    
     main .objetivos .contenedor-objetivos div {
         width: 100%;
         margin-bottom: 30px;
@@ -532,7 +547,6 @@ footer .seccion1 .container img {
         position: absolute;
         top: 20px;
     }
-
     header>.carousel>.carousel-inner>.principal>p {
         font-size: 16px;
     }
