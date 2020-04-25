@@ -130,6 +130,7 @@ main .quienes-somos .contenedor-m-v .mision p, main .quienes-somos .contenedor-m
     font-weight: 600;
     font-size: 12px;
     padding: 0;
+    line-height: 1.75;
     margin-left: 5px;
     text-align: left;
     text-align: justify;
@@ -405,6 +406,7 @@ footer .seccion1 .container img {
     }
     main .quienes-somos .titulo, main .objetivos .titulo, main .servicios .titulo, main .proyectos .titulo, main .contacto .titulo {
         font-size: 24px;
+        margin-bottom: 15px;
     }
     main .quienes-somos .contenedor-m-v {
         margin-top: 50px;
@@ -473,13 +475,13 @@ footer .seccion1 .container img {
         display: none;
     }
     main .quienes-somos p {
-        padding: 0 40px;
+        padding: 0 25px;
         font-size: 16px;
         hyphens: manual;
     }
     main .quienes-somos .contenedor-m-v {
         margin-top: 40px;
-        padding: 0 60px;
+        padding: 0 40px;
     }
     main .quienes-somos .contenedor-m-v .mision, main .quienes-somos .contenedor-m-v .vision {
         width: 100%;
