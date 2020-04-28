@@ -3,6 +3,9 @@ $(document).ready(function () {
     var dog = 1;
     var key = 1;
     var skt = 1;
+    var flag = 1;
+    var flag2 = 1;
+    var flag3 = 1;
     ready = true;
     $('#down, #up2, #up3, #up4').css({
         'display': 'none'
@@ -11,7 +14,7 @@ $(document).ready(function () {
     $('#up, #down2,#down3, #down4').css({
         'display': 'block'
     });
-    $('main .proyectos .uno').css('border-bottom','3px solid #942a4d');
+    $('main .proyectos .uno').css('border-bottom', '3px solid #942a4d');
 
 
 
@@ -120,7 +123,7 @@ $(document).ready(function () {
                 'display': 'none'
             });
 
-            $('main .proyectos .uno').css('border-bottom','3px solid #777');
+            $('main .proyectos .uno').css('border-bottom', '3px solid #777');
 
             $('#down').css({
                 'display': 'block'
@@ -137,7 +140,7 @@ $(document).ready(function () {
                 'display': 'block'
             });
 
-            $('main .proyectos .uno').css('border-bottom','3px solid #942a4d');
+            $('main .proyectos .uno').css('border-bottom', '3px solid #942a4d');
 
 
             $('#down').css({
@@ -161,7 +164,7 @@ $(document).ready(function () {
                 'display': 'none'
             });
 
-            $('main .proyectos .dos').css('border-bottom','3px solid #777');
+            $('main .proyectos .dos').css('border-bottom', '3px solid #777');
 
             $('#down2').css({
                 'display': 'block'
@@ -177,7 +180,7 @@ $(document).ready(function () {
                 'display': 'block'
             });
 
-            $('main .proyectos .dos').css('border-bottom','3px solid #942a4d');
+            $('main .proyectos .dos').css('border-bottom', '3px solid #942a4d');
 
             $('#down2').css({
                 'display': 'none'
@@ -199,7 +202,7 @@ $(document).ready(function () {
                 'display': 'none'
             });
 
-            $('main .proyectos .tres').css('border-bottom','3px solid #777');
+            $('main .proyectos .tres').css('border-bottom', '3px solid #777');
 
             $('#down3').css({
                 'display': 'block'
@@ -215,7 +218,7 @@ $(document).ready(function () {
                 'display': 'block'
             });
 
-            $('main .proyectos .tres').css('border-bottom','3px solid #942a4d');
+            $('main .proyectos .tres').css('border-bottom', '3px solid #942a4d');
 
             $('#down3').css({
                 'display': 'none'
@@ -236,7 +239,7 @@ $(document).ready(function () {
                 'display': 'none'
             });
 
-            $('main .proyectos .cuatro').css('border-bottom','3px solid #777');
+            $('main .proyectos .cuatro').css('border-bottom', '3px solid #777');
 
             $('#down4').css({
                 'display': 'block'
@@ -252,7 +255,7 @@ $(document).ready(function () {
                 'display': 'block'
             });
 
-            $('main .proyectos .cuatro').css('border-bottom','3px solid #942a4d');
+            $('main .proyectos .cuatro').css('border-bottom', '3px solid #942a4d');
 
             $('#down4').css({
                 'display': 'none'
@@ -265,30 +268,96 @@ $(document).ready(function () {
         }
     });
 
-     //Scroll elementos menu
+    //Scroll elementos menu
 
 
-     var servicio = $('#s-servicios').offset().top;
-     var contacto= $('#s-contacto').offset().top;
- 
- 
-     $('#btn-servicios').on('click',function(e){
-         e.preventDefault();
- 
-         $('html, body').animate({
-             scrollTop: servicio -100
-         },580);
- 
-     });
-     
-         
- 
-     $('#btn-contacto').on('click',function(e){
-         e.preventDefault();
- 
-         $('html, body').animate({
-             scrollTop: contacto -100
-         },580);
-     });
+    var servicio = $('#s-servicios').offset().top;
+    var contacto = $('#s-contacto').offset().top;
+
+
+    $('#btn-servicios').on('click', function (e) {
+        e.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: servicio - 100
+        }, 580);
+
+    });
+
+
+
+    $('#btn-contacto').on('click', function (e) {
+        e.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: contacto - 100
+        }, 580);
+    });
+
+    //Estado incial
+    var windowWidth = $(window).width();
+    if (windowWidth > 800) {
+        $('main >.quienes-somos >.container >.video ').css({
+            opacity: 0
+        });
+
+        $('main .objetivos .contenedor-objetivos div').css({
+            top: '-100px',
+            opacity: 0
+        });
+        $('main .servicios .contenedor-servicios .card').css({
+            opacity: 0
+        });
+    }
+
+    //Parallax
+
+    $(window).scroll(function () {
+        var windowWidth = $(window).width();
+        var scroll = $(window).scrollTop();
+
+        if (windowWidth > 800) {
+            $('main .quienes-somos .contenedor-m-v .mision').css({
+                'transform': 'translate(0px,-' + scroll / 8 + '%)'
+            });
+
+            $('main .quienes-somos .contenedor-m-v .vision').css({
+                'transform': 'translate(0px,-' + scroll / 8 + '%)'
+            });
+            if (scroll > 800 && flag) {
+                $('main >.quienes-somos >.container >.video ').animate({
+                    opacity: 1
+                }, 2000);
+                flag = 0;
+            }
+            if (scroll > 1200 && flag2) {
+                $('main .objetivos .contenedor-objetivos div').each(function (index) {
+                    $(this).animate({
+                        top: '0px',
+                        opacity: 1
+                    }, 2000 + (index * 500));
+                });
+            }
+
+            if (scroll > 2000 && flag3) {
+                $('main .servicios .contenedor-servicios .card').each(function (index) {
+                    $(this).animate({
+                        opacity: 1
+                    }, 2000 + (index * 100));
+                });
+
+            }
+        }
+        if (windowWidth < 800) {
+            $('main >.quienes-somos >.container >.video').css({
+                'marginTop': '40px'
+            });
+            $('main .quienes-somos .contenedor-m-v').css({
+                'position': 'relative',
+                'top': 0
+            });
+        }
+    });
+
 
 });
