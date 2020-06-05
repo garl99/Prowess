@@ -116,15 +116,6 @@ main .quienes-somos .contenedor-m-v {
 main .quienes-somos .contenedor-m-v .mision, main .quienes-somos .contenedor-m-v .vision {
     width: 48%;
     position: relative;
-    opacity: 0;
-}
-
-main .quienes-somos .contenedor-m-v .mision{
-    right: 100%;
-}
-
-main .quienes-somos .contenedor-m-v .vision{
-    left: 100%;
 }
 
 main .quienes-somos .contenedor-m-v .mision img, main .quienes-somos .contenedor-m-v .vision img {

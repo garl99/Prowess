@@ -311,6 +311,16 @@ $(document).ready(function () {
         $('main .servicios .contenedor-servicios .card').css({
             opacity: 0
         });
+
+        $('main .quienes-somos .contenedor-m-v .mision').css({
+            opacity: 0,
+            right:'100%'
+        });
+
+        $('main .quienes-somos .contenedor-m-v .vision').css({
+            opacity: 0,
+            left:'100%'
+        });
     }
 
     //Parallax
@@ -343,7 +353,7 @@ $(document).ready(function () {
                 });
 
             }
-            if (scroll > 200 && flag4) {
+            if (scroll > 150 && flag4) {
                 $('main .quienes-somos .contenedor-m-v .mision').animate({
                     opacity: 1,
                     right:'0px'
