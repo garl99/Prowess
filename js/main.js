@@ -6,6 +6,7 @@ $(document).ready(function () {
     var flag = 1;
     var flag2 = 1;
     var flag3 = 1;
+    var flag4 = 1;
     ready = true;
     $('#down, #up2, #up3, #up4').css({
         'display': 'none'
@@ -14,6 +15,8 @@ $(document).ready(function () {
     $('#up, #down2,#down3, #down4').css({
         'display': 'block'
     });
+    $('main .proyectos .uno').css('border-bottom', '3px solid #942a4d');
+    
     $('main .proyectos .uno').css('border-bottom', '3px solid #942a4d');
 
 
@@ -317,13 +320,6 @@ $(document).ready(function () {
         var scroll = $(window).scrollTop();
 
         if (windowWidth > 800) {
-            $('main .quienes-somos .contenedor-m-v .mision').css({
-                'transform': 'translate(0px,-' + scroll / 8 + '%)'
-            });
-
-            $('main .quienes-somos .contenedor-m-v .vision').css({
-                'transform': 'translate(0px,-' + scroll / 8 + '%)'
-            });
             if (scroll > 800 && flag) {
                 $('main >.quienes-somos >.container >.video ').animate({
                     opacity: 1
@@ -347,10 +343,23 @@ $(document).ready(function () {
                 });
 
             }
+            if (scroll > 200 && flag4) {
+                $('main .quienes-somos .contenedor-m-v .mision').animate({
+                    opacity: 1,
+                    right:'0px'
+                }, 3000);
+
+                $('main .quienes-somos .contenedor-m-v .vision').animate({
+                    opacity: 1,
+                    left:'0px'
+                }, 3000);
+
+                flag4 = 0;
+            }
         }
         if (windowWidth < 800) {
             $('main >.quienes-somos >.container >.video').css({
-                'marginTop': '40px'
+                'marginTop': '20px'
             });
             $('main .quienes-somos .contenedor-m-v').css({
                 'position': 'relative',

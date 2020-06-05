@@ -109,15 +109,22 @@ main .quienes-somos .contenedor-m-v {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: absolute;
-    padding-right: 240px;
-    padding-left: 150px;
-    padding-top: 40px;
-    top: 150%;
+    padding: 40px 150px;
+    margin: auto;
 }
 
 main .quienes-somos .contenedor-m-v .mision, main .quienes-somos .contenedor-m-v .vision {
     width: 48%;
+    position: relative;
+    opacity: 0;
+}
+
+main .quienes-somos .contenedor-m-v .mision{
+    right: 100%;
+}
+
+main .quienes-somos .contenedor-m-v .vision{
+    left: 100%;
 }
 
 main .quienes-somos .contenedor-m-v .mision img, main .quienes-somos .contenedor-m-v .vision img {
@@ -150,7 +157,6 @@ main >.quienes-somos >.container >.video {
     width: 60%;
     height: 50%;
     margin-left: 20%;
-    margin-top: 400px;
     border-radius: 20px;
 }
 
